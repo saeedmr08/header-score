@@ -1,0 +1,53 @@
+:root {
+  --ink: #1c1712;
+  --ink-soft: #3d342a;
+  --paper: #e8dcc8;
+  --paper-deep: #d4c4a8;
+  --rule: #2a2218;
+  --stamp-red: #8b1e1e;
+  --stamp-green: #1f4d3a;
+  --stamp-amber: #8a5a12;
+  --wash: #c9b896;
+  --shadow: rgba(28, 23, 18, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  color: var(--ink);
+  font-family: var(--font-body), "Source Serif 4", Georgia, serif;
+  background-color: var(--paper-deep);
+  background-image:
+    radial-gradient(ellipse at 20% 0%, rgba(255, 248, 235, 0.55), transparent 50%),
+    radial-gradient(ellipse at 90% 100%, rgba(120, 90, 50, 0.12), transparent 45%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      rgba(28, 23, 18, 0.015) 3px,
+      rgba(28, 23, 18, 0.015) 4px
+    );
+  line-height: 1.55;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(139, 30, 30, 0.18);
+}
